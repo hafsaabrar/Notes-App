@@ -1,0 +1,226 @@
+.app-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Themes */
+.app-container.light {
+  background-color: #f4f6f8;
+  color: #333333;
+}
+
+.app-container.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.notes-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.theme-toggle-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.light .theme-toggle-btn {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.dark .theme-toggle-btn {
+  background-color: #f1c40f;
+  color: #000;
+}
+
+/* Search Bar */
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  outline: none;
+}
+
+.light .search-input {
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.dark .search-input {
+  border: 1px solid #444;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Note Form */
+.note-form {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.light .note-form {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.dark .note-form {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.form-title {
+  margin-bottom: 15px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.light .form-input,
+.light .form-textarea {
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.dark .form-input,
+.dark .form-textarea {
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.save-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #7f8c8d;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Notes Grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.empty-msg {
+  color: #888;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.note-card {
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.light .note-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.dark .note-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.note-card-title {
+  margin-bottom: 8px;
+}
+
+.note-card-content {
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.light .note-card-content {
+  color: #555;
+}
+
+.dark .note-card-content {
+  color: #ccc;
+}
+
+.note-card-footer {
+  margin-top: 15px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.light .note-card-footer {
+  border-top: 1px solid #eee;
+}
+
+.dark .note-card-footer {
+  border-top: 1px solid #333;
+}
+
+.note-date {
+  color: #888;
+  font-size: 11px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.edit-btn {
+  color: #3498db;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  color: #e74c3c;
+}
